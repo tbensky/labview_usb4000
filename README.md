@@ -31,6 +31,6 @@ and sifting through the drivers.
 
 Once the drivers were switched, the VISA resource ID will come up both in the device manager and
 in the Labview code.  I think actually once I got the STS driver to install, it took over the older
-WinUSB 
+WinUSB and I saw it in the device manager tree.
 
 
