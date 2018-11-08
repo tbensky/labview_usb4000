@@ -18,12 +18,19 @@ driver for this, called the STS USB driver.  You can download it [here](http://s
 dependent package (labview-ng-driver), which is impossible to find.
 
 * You have to navigate to the STS driver, and install it manually. 
-    * In Windows 10, the "Update Driver" button couldn't do it, claiming it isn't a appropriate driver.
+    * In Windows 10, the "Update Driver" button (where you tell it you 'have a disk' (as in a driver disk)) 
+    couldn't do it, claiming it isn't a appropriate driver.
     * You navigate to the STS driver .INF file and right click on it, then select the `install` option.
     * Windows may complain the driver isn't digitally signed.  To get around this, restart the computer
     while holding down the [Shift] key.  Select 'Start up options' and #7 will disable this digital
     signature checks (until the next boot).
 
-6. 
+6. Once installed, you have to now switch the driver associated with the USB4000 from the WinUSB
+driver to this STS driver. You can do this by going to the device manager (hold down Windows key + X)
+and sifting through the drivers.
+
+Once the drivers were switched, the VISA resource ID will come up both in the device manager and
+in the Labview code.  I think actually once I got the STS driver to install, it took over the older
+WinUSB 
 
 
