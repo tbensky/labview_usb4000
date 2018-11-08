@@ -23,15 +23,17 @@ dependent package (labview-ng-driver), which is impossible to find.
     tell it you 'have a disk' (as in a driver disk).  This didn't work for me, as it claimed it wasn't a appropriate driver.
     * I had to navigate to the STS driver .INF file directly and right click on it, then select the `install` option.
     * Windows may complain the driver isn't digitally signed.  To get around this, restart the computer
-    while holding down the [Shift] key.  Select 'Start up options' and #7 will disable this digital
+    while holding down the [Shift] key.  Under the 'troubleshooting' option, select 'Start up options' and #7 will disable this digital
     signature checks (until the next boot).
 
 6. Once installed, you have to now switch the driver associated with the USB4000 from the WinUSB
 driver to this STS driver. You can do this by going to the device manager (hold down Windows key + X)
-and sifting through the drivers.
+and sift through the drivers until you find the Ocean Optics driver.
 
-Once the drivers were switched, the VISA resource ID will come up both in the device manager and
+Once the drivers were switched, the VISA resource ID will come up both in the device manager, NI MAX and
 in the Labview code.  I think actually once I got the STS driver to install, it took over the older
-WinUSB and I saw it in the device manager tree.
+WinUSB and I saw it in the device manager tree (I never had to make the driver switch happen).
+
+
 
 
