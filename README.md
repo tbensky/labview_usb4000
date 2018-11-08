@@ -2,7 +2,8 @@
 
 As the title says, here's what I did to get a USB4000 working with Labview
 
-1. Be sure the spectrometer is working on your machine with Oceanview (the stock software).
+1. Be sure the spectrometer is working on your machine with Oceanview (the stock software). Leave it plugged in as
+you go through these steps.
 
 2. Download and install the NI [Ocean Optics Driver](http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=7833BD4A31DA1274E04400144FB7D21D)
 
@@ -18,9 +19,9 @@ driver for this, called the STS USB driver.  You can download it [here](http://s
 dependent package (labview-ng-driver), which is impossible to find.
 
 * You have to navigate to the STS driver, and install it manually. 
-    * In Windows 10, the "Update Driver" button (where you tell it you 'have a disk' (as in a driver disk)) 
-    couldn't do it, claiming it isn't a appropriate driver.
-    * You navigate to the STS driver .INF file and right click on it, then select the `install` option.
+    * In Windows 10, you can try going to the "Update Driver" button for the Ocean Optics device.  Navigate so you can 
+    tell it you 'have a disk' (as in a driver disk).  This didn't work for me, as it claimed it wasn't a appropriate driver.
+    * I had to navigate to the STS driver .INF file directly and right click on it, then select the `install` option.
     * Windows may complain the driver isn't digitally signed.  To get around this, restart the computer
     while holding down the [Shift] key.  Select 'Start up options' and #7 will disable this digital
     signature checks (until the next boot).
