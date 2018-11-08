@@ -1,4 +1,4 @@
-# Getting an Ocean Optics USB4000 working with Labview
+# Getting an Ocean Optics USB4000 working with Labview (Windows 10)
 
 As the title says, here's what I did to get a USB4000 working with Labview
 
@@ -18,9 +18,9 @@ driver for this, called the STS USB driver.  You can download it [here](http://s
 * The NI Package Manager wouldn't do it, as it needed some 
 dependent package (labview-ng-driver), which is impossible to find.
 
-* You have to navigate to the STS driver, and install it manually. 
+* You have to navigate to the STS driver (that is, the actual file for it), and install it manually. 
     * In Windows 10, you can try going to the "Update Driver" button for the Ocean Optics device.  Navigate so you can 
-    tell it you 'have a disk' (as in a driver disk).  This didn't work for me, as it claimed it wasn't a appropriate driver.
+    tell it you 'have a disk' (as in a driver disk), and point it to the STS file.  This didn't work for me, as Windows claimed it wasn't a appropriate driver.
     * I had to navigate to the STS driver .INF file directly and right click on it, then select the `install` option.
     * Windows may complain the driver isn't digitally signed.  To get around this, restart the computer
     while holding down the [Shift] key.  Under the 'troubleshooting' option, select 'Start up options' and #7 will disable this digital
