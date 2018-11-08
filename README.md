@@ -28,11 +28,12 @@ dependent package (labview-ng-driver), which is impossible to find.
 
 6. Once installed, you have to now switch the driver associated with the USB4000 from the WinUSB
 driver to this STS driver. You can do this by going to the device manager (hold down Windows key + X)
-and sift through the drivers until you find the Ocean Optics driver.
+and sift through the drivers until you find the Ocean Optics driver.  A selection box should allow you
+to select which driver you want to use (WinUSB or STS)---choose STS.
 
-Once the drivers were switched, the VISA resource ID will come up both in the device manager, NI MAX and
+Once the drivers were switched, the VISA resource ID will come up both in the Windows device manager, NI MAX and
 in the Labview code.  I think actually once I got the STS driver to install, it took over the older
-WinUSB and I saw it in the device manager tree (I never had to make the driver switch happen).
+WinUSB automatically and I saw it in the device manager tree (I never had to make the driver switch happen).
 
 
 
