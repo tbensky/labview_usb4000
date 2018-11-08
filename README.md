@@ -7,8 +7,8 @@ you go through these steps.
 
 2. Download and install the NI [Ocean Optics Instrument Driver](http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=7833BD4A31DA1274E04400144FB7D21D)
 
-3. The problem I had is that when I ran the Labview example code for the USB4000, there was no VISA resource ID for the spectrometer.  It
-also did not appear under NI MAX.
+3. The problem I had is that when I ran the Labview example code for the USB4000 (part of the instrument driver), 
+there was no VISA resource ID for the spectrometer.  It also did not appear under NI MAX.
 
 4. The issue is that Windows by default uses WinUSB to communicate with USB4000.  Labview and VISA need to use their own
 driver for this, called the STS USB driver.  You can download it [here](http://sine.ni.com/apps/utf8/niid_web_display.download_page?p_id_guid=A4A691E2F9B24D8EE0440021287E6A9E).
