@@ -35,6 +35,7 @@ Once the drivers were switched, the VISA resource ID will come up both in the Wi
 in the Labview code.  I think actually once I got the STS driver to install, it took over the older
 WinUSB automatically and I saw it in the device manager tree (I never had to make the driver switch happen).
 
+Thank you Norm H. at Ocean Optics for your help with this.
 
 
 
